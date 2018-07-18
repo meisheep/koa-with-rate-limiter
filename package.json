@@ -6,7 +6,7 @@
   "author": "meisheep <immeisheep@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": "^4.8.4 || ^6.10.1 || ^7.10.1 || >= 8.1.4"
+    "node": ">= 8.1.4"
   },
   "scripts": {
     "start": "node index.js",
