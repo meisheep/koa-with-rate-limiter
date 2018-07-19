@@ -45,7 +45,7 @@ Also, it uses `getter` feature to check whether the lookup table should be refre
 - increment: O(1)
 
 #### Space Complexity
-It only uses a hash map to act as a counter. The space complexity is constant O(1).
+It uses one hash map to act as a counter which stores request counts from each IP sources. The space complexity is linear O(K), where K is the number of the distinct IPs.
 
 ### middleware/rate-limiter
 A rate limiter middleware utilizes `RateLimiter`. It increments counts for each unique ip, storing request counts and `shouldResponse` value to `ctx.state`.
